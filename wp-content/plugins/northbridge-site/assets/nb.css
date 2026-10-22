@@ -361,3 +361,11 @@ body a.nb-ci:active{transform:scale(.98)}
 .site-header .elementor-active .site-navigation-toggle-icon::before{transform:rotate(45deg)!important}
 .site-header .elementor-active .site-navigation-toggle-icon::after{transform:rotate(-45deg)!important}
 .site-header .site-navigation-toggle-holder:not(.elementor-active) .site-navigation-toggle-icon::before,.site-header .site-navigation-toggle-holder:not(.elementor-active) .site-navigation-toggle-icon::after{transform:none!important}
+
+/* FAQ toggle: drawn icon, aligned to first line, even spacing */
+.nb-faq details{padding:0 24px}
+.nb-faq summary{align-items:flex-start;gap:20px;padding:22px 0;line-height:1.35}
+.nb-faq summary::after{content:""!important;width:30px;height:30px;margin-top:-3px;border-radius:50%;background:linear-gradient(var(--nb-ink),var(--nb-ink)) center/12px 1.75px no-repeat,linear-gradient(var(--nb-ink),var(--nb-ink)) center/1.75px 12px no-repeat,var(--nb-bg)}
+.nb-faq details[open] summary::after{background:linear-gradient(var(--nb-ink),var(--nb-ink)) center/12px 1.75px no-repeat,linear-gradient(var(--nb-ink),var(--nb-ink)) center/1.75px 12px no-repeat,var(--nb-accent)}
+.nb-faq details p{padding:0 50px 24px 0}
+@media(max-width:560px){.nb-faq details{padding:0 20px}.nb-faq summary{gap:16px;padding:20px 0}.nb-faq details p{padding:0 0 22px}}
