@@ -369,3 +369,8 @@ body a.nb-ci:active{transform:scale(.98)}
 .nb-faq details[open] summary::after{background:linear-gradient(var(--nb-ink),var(--nb-ink)) center/12px 1.75px no-repeat,linear-gradient(var(--nb-ink),var(--nb-ink)) center/1.75px 12px no-repeat,var(--nb-accent)}
 .nb-faq details p{padding:0 50px 24px 0}
 @media(max-width:560px){.nb-faq details{padding:0 20px}.nb-faq summary{gap:16px;padding:20px 0}.nb-faq details p{padding:0 0 22px}}
+
+/* demo disclosure bar */
+.nb-demo-bar{display:flex;align-items:center;justify-content:center;gap:8px;padding:8px 16px;background:var(--nb-ink);color:#C3CAD6;font-size:13px;line-height:1.4;text-align:center}
+.nb-demo-dot{flex:none;width:6px;height:6px;border-radius:50%;background:var(--nb-accent)}
+@media(max-width:560px){.nb-demo-bar{font-size:12px;padding:7px 14px}}
